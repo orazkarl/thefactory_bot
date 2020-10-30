@@ -10,6 +10,6 @@ def handle_start(message):
 
 @bot.message_handler(commands=['yourid'])
 def handle_token(message):
-    bot.send_message(message.from_user.id, text='Your Telegram User ID: ' + message.from_user.id)
+    bot.send_message(message.from_user.id, text='Your Telegram User ID: ' + str(message.from_user.id))
 
 bot.polling(none_stop=True)
